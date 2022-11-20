@@ -1,7 +1,19 @@
-// Function constructors
-function Circle (radius) {
-  this.radius = radius;
+// //global object
+
+function test() {
+  console.log(this)
+  this.myname="Guru";
 }
+test();
+console.log(this.myname); //OR
+// console.log(window.myname);
+
+
+
+// // Function constructors
+// function Circle (radius) {
+//   this.radius = radius;
+// }
 
 // Circle.prototype.getArea = 
 //   function () {
@@ -18,10 +30,3 @@ function Circle (radius) {
 
 
 
-// function test() {
-//   console.log(this)
-//   this.myname="Guru";
-// }
-// test();
-console.log(this.myname); //OR
-console.log(window.myname);

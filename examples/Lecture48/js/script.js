@@ -61,7 +61,8 @@ console.log(afunction());
 * The invokation of that function will only act in accordance of the "chosen state" which is the last declared state of the function.
 *The child function value is affected by the changes in the last state of the parent function
 *changes in the son however do not affect the parent function neither does it affect the child function.The change in the child last state is invisible and not taken into account.
-*The child function become a full replica of the parent with a unique characteristics of its own.
+*The child function become a full replica of the parent with no  unique characteristics of its own.
+* however this can be altered if the child function is equal to another value or function. Then, the child will no longer hold the value of it previous parent
 */
 function mumfunction() {
   console.log("I am his mum");
